@@ -13,13 +13,13 @@ function fibonacci(n) {
 
 function testFibonacci(n) {
   for (let i = 0; i < n; i++) {
-      fibonacci(10)
+      fibonacci(100)
   }
 }
 
 
 const t0 = performance.now();
-testFibonacci(1000);
+testFibonacci(10000);
 const t1 = performance.now();
 
 let time = t1 - t0;
