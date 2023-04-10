@@ -22,7 +22,9 @@ const t0 = performance.now();
 testFibonacci(1000);
 const t1 = performance.now();
 
-const JSms = t1 - t0;
+let time = t1 - t0;
+const JSms = time.toFixed(3)
+
 
 console.log(`JS en ${JSms} ms`);
 

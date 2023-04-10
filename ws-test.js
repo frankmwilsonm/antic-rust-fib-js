@@ -21,9 +21,9 @@ setTimeout(function() {
 
               const WSms = t1 - t0;
 
-              ttt = WSms;
+              ttt = WSms.toFixed(3);
 
-              console.log(`WASM en ${WSms} ms`);
+              console.log(`WASM en ${ttt} ms`);
 
               sendBenchFib()
           }
@@ -48,8 +48,8 @@ if (userAgent.match(/iPhone/i)) device = "iPhone";
 if (userAgent.match(/iPad/i)) device = "iPad";
 if (userAgent.match(/Android/i)) device = "Android";
 if (userAgent.match(/Windows Phone/i)) device = "Windows Phone";
-if (userAgent.match(/Win64/i)) device = "Win";
-if (userAgent.match(/Win32/i)) device = "Win";
+if (userAgent.match(/Win64/i)) device = "Desk Win";
+if (userAgent.match(/Win32/i)) device = "Desk Win";
 
 console.log("Device: " + device);
 
@@ -107,11 +107,14 @@ let ts_platform = navigator.platform;
 let ts_device = device;
 let ts_os = os;
 let ts_browser = browserName;
-let ts_wsTM = Number(ttt);
-let ts_jsTM = Number(JSms);
+let ts_jsTM = JSms;
+let ts_wsTM = ttt;
+
 
 // Send
-fetch(`https://maker.ifttt.com/trigger/data-wasm-v1-uc8/with/key/d47g5fZHaqzGu_0dEX-kcW?value1=${ts_algor},${ts_platform},${ts_device},${ts_os},${ts_browser},${ts_jsTM},${ts_wsTM}`)
+
+
+fetch(`https://maker.ifttt.com/trigger/data-wasm-v1-uc8/with/key/d47g5fZHaqzGu_0dEX-kcW?value1=${ts_algor}-${ts_platform}-${ts_device}-${ts_os}-${ts_browser}-${ts_jsTM}-${ts_wsTM}`)
   .then(response => response.json())
   .then(data => console.log(data))
   .catch(error => console.error(error))
