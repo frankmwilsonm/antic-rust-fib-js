@@ -1,6 +1,6 @@
 setTimeout(function() {
         run();
-      }, 3000);
+      }, 5000);
 
       import init, { fibonacci } from './pkg/fibonacci_ws.js';
 
@@ -47,9 +47,9 @@ var device = "Dispositivo Desconocido";
 if (userAgent.match(/iPhone/i)) device = "iPhone";
 if (userAgent.match(/iPad/i)) device = "iPad";
 if (userAgent.match(/Android/i)) device = "Android";
-if (userAgent.match(/Windows Phone/i)) device = "Windows Phone";
-if (userAgent.match(/Win64/i)) device = "Desk Win";
-if (userAgent.match(/Win32/i)) device = "Desk Win";
+if (userAgent.match(/Windows Phone/i)) device = "WindowsPhone";
+if (userAgent.match(/Win64/i)) device = "WinDesktop";
+if (userAgent.match(/Win32/i)) device = "WinDesktop";
 
 console.log("Device: " + device);
 
@@ -95,9 +95,11 @@ console.log("Browser: " + browserName);
 
 
 
+console.log("jsTM: "+JSms)
+
 console.log("wsTM: "+ttt)
 
-console.log("jsTM: "+JSms)
+
 
 
 //Data
