@@ -6,7 +6,7 @@ function fibonacci(n) {
     let c = a + b;
     a = b;
     b = c;
-  }
+  } 
   return a;
 }
 
