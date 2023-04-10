@@ -1,9 +1,9 @@
-console.log("=========================")
+// console.log("=========================")
 
-console.log("Plataforma:"+navigator.platform)
-console.log("All dates Browser"+navigator.userAgent)
+// console.log("Plataforma:"+navigator.platform)
+// console.log("All dates Browser"+navigator.userAgent)
 
-console.log("=========================")
+// console.log("=========================")
 
 document.write("All dates Browser"+navigator.platform)
 document.write("========================="+navigator.userAgent)

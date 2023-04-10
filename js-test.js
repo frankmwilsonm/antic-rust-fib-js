@@ -1,3 +1,4 @@
+
 function fibonacci(n) {
   let a = 0;
   let b = 1;
@@ -21,9 +22,9 @@ const t0 = performance.now();
 testFibonacci(1000);
 const t1 = performance.now();
 
-const tiempoTranscurrido = t1 - t0;
+const JSms = t1 - t0;
 
-console.log(`El tiempo transcurrido es de ${tiempoTranscurrido} milisegundos.`);
+console.log(`JS en ${JSms} ms`);
 
 
 
