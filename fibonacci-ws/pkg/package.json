@@ -1,0 +1,14 @@
+{
+  "name": "fibonacci-ws",
+  "version": "0.1.0",
+  "files": [
+    "fibonacci_ws_bg.wasm",
+    "fibonacci_ws.js",
+    "fibonacci_ws.d.ts"
+  ],
+  "module": "fibonacci_ws.js",
+  "types": "fibonacci_ws.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
