@@ -118,10 +118,15 @@ let ts_wsTM = ttt;
 
 // Send
 
-fetch(`https://maker.ifttt.com/trigger/data-wasm-v1-uc8/with/key/d47g5fZHaqzGu_0dEX-kcW?value1=${ts_algor}-${ts_platform}-${ts_device}-${ts_os}-${ts_browser}-${ts_jsTM}-${ts_wsTM}`)
+fetch(`https://wasm-rust-js-testdata.lfrakie.workers.dev/?1=${ts_algor}-${ts_platform}-${ts_device}-${ts_os}-${ts_browser}-${ts_jsTM}-${ts_wsTM}`)
   .then(response => response.json())
   .then(data => console.log(data))
   .catch(error => console.error(error))
+
+  // fetch(`https://maker.ifttt.com/trigger/data-wasm-v1-uc8/with/key/d47g5fZHaqzGu_0dEX-kcW?value1=${ts_algor}-${ts_platform}-${ts_device}-${ts_os}-${ts_browser}-${ts_jsTM}-${ts_wsTM}`)
+  //   .then(response => response.json())
+  //   .then(data => console.log(data))
+  //   .catch(error => console.error(error))
 
 }
 
