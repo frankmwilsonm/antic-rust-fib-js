@@ -1,5 +1,6 @@
 setTimeout(function() {
         run();
+        console.log("start timer")
       }, 5000);
 
       import init, { fibonacci } from './pkg/fibonacci_ws.js';
@@ -16,7 +17,7 @@ setTimeout(function() {
               }
 
               const t0 = performance.now();
-              testFibonacci(10000);
+              testFibonacci(1000);
               const t1 = performance.now();
 
               const WSms = t1 - t0;

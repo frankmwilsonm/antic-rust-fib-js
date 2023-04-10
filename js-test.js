@@ -19,7 +19,7 @@ function testFibonacci(n) {
 
 
 const t0 = performance.now();
-testFibonacci(10000);
+testFibonacci(1000);
 const t1 = performance.now();
 
 let time = t1 - t0;
