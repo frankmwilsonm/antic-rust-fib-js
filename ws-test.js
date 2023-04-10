@@ -1,6 +1,6 @@
-setTimeout(function() {
-        run();
-      }, 5000);
+// setTimeout(function() {
+//         
+//       }, 5000);
 
       import init, { fibonacci } from './pkg/fibonacci_ws.js';
 
@@ -16,7 +16,7 @@ setTimeout(function() {
               }
 
               const t0 = performance.now();
-              testFibonacci(100000);
+              testFibonacci(1000);
               const t1 = performance.now();
 
               const WSms = t1 - t0;
@@ -27,6 +27,8 @@ setTimeout(function() {
 
               sendBenchFib()
           }
+
+          run();
 
 function sendBenchFib(){
 
@@ -111,11 +113,10 @@ let ts_os = os;
 let ts_browser = browserName;
 let ts_jsTM = JSms;
 let ts_wsTM = ttt;
-let ts_alldata = navigator.userAgent;
+// let ts_alldata = navigator.userAgent;
 
 
 // Send
-
 
 fetch(`https://maker.ifttt.com/trigger/data-wasm-v1-uc8/with/key/d47g5fZHaqzGu_0dEX-kcW?value1=${ts_algor}-${ts_platform}-${ts_device}-${ts_os}-${ts_browser}-${ts_jsTM}-${ts_wsTM}`)
   .then(response => response.json())
