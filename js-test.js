@@ -17,18 +17,14 @@ function testFibonacci(n) {
 }
 
 
-console.time("fibonacci en:");
+console.time("fibonacci js en");
 testFibonacci(1000);
-console.timeEnd("fibonacci en:");
+console.timeEnd("fibonacci js en");
 
 
 
 
-
-
-
-// console.time("fibonacci tiempo");
-// console.log(fibonacci(20));
-// console.timeEnd("fibonacci tiempo");
-
+// function abc(){
+//   console.log('Other instance fn -------')
+// }
 
