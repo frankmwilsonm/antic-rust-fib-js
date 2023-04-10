@@ -13,7 +13,7 @@ function fibonacci(n) {
 
 function testFibonacci(n) {
   for (let i = 0; i < n; i++) {
-      fibonacci(100)
+      fibonacci(50)
   }
 }
 
