@@ -17,11 +17,19 @@ function testFibonacci(n) {
 }
 
 
-console.time("fibonacci js en");
+const t0 = performance.now();
 testFibonacci(1000);
-console.timeEnd("fibonacci js en");
+const t1 = performance.now();
+
+const tiempoTranscurrido = t1 - t0;
+
+console.log(`El tiempo transcurrido es de ${tiempoTranscurrido} milisegundos.`);
 
 
+
+// console.time("fibonacci js en");
+// testFibonacci(1000);
+// console.timeEnd("fibonacci js en");
 
 
 // function abc(){
