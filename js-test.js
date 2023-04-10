@@ -19,11 +19,11 @@ function testFibonacci(n) {
 
 
 const t0 = performance.now();
-testFibonacci(1000);
+testFibonacci(100000);
 const t1 = performance.now();
 
 let time = t1 - t0;
-const JSms = time.toFixed(3)
+const JSms = time.toFixed(3).toString().replace('.', ',');
 
 
 console.log(`JS en ${JSms} ms`);

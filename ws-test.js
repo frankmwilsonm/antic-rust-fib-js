@@ -16,12 +16,12 @@ setTimeout(function() {
               }
 
               const t0 = performance.now();
-              testFibonacci(1000);
+              testFibonacci(100000);
               const t1 = performance.now();
 
               const WSms = t1 - t0;
 
-              ttt = WSms.toFixed(3);
+              ttt = WSms.toFixed(3).toString().replace('.', ',');
 
               console.log(`WASM en ${ttt} ms`);
 
@@ -95,9 +95,9 @@ console.log("Browser: " + browserName);
 
 
 
-console.log("wsTM "+ttt)
+console.log("wsTM: "+ttt)
 
-console.log("jsTM "+JSms)
+console.log("jsTM: "+JSms)
 
 
 //Data
@@ -109,6 +109,7 @@ let ts_os = os;
 let ts_browser = browserName;
 let ts_jsTM = JSms;
 let ts_wsTM = ttt;
+let ts_alldata = navigator.userAgent;
 
 
 // Send
