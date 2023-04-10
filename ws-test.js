@@ -1,6 +1,6 @@
-// setTimeout(function() {
-//         
-//       }, 5000);
+setTimeout(function() {
+        run();
+      }, 5000);
 
       import init, { fibonacci } from './pkg/fibonacci_ws.js';
 
@@ -28,7 +28,7 @@
               sendBenchFib()
           }
 
-          run();
+        //   run();
 
 function sendBenchFib(){
 
