@@ -1,6 +1,6 @@
 setTimeout(function() {
         run();
-        console.log("start timer")
+        console.log("timer")
       }, 5000);
 
       import init, { fibonacci } from './pkg/fibonacci_ws.js';
