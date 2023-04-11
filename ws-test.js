@@ -42,6 +42,10 @@ console.log("Algorit: Fib ")
 
 console.log("Platform: "+navigator.platform)
 
+console.log("Platform: "+navigator.userAgent)
+
+
+
 
 var userAgent = navigator.userAgent;
 
