@@ -137,5 +137,6 @@ let ts_alldata = navigator.userAgent;
 //   .then(data => console.log(data))
 //   .catch(error => console.error(error))
 
+
 }
 
